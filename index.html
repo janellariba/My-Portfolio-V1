@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <header>
+        <nav>
+            <h2 id="logo_name">
+                <span id="span_J">J</span>
+                <span id="span_A">A</span>
+                <span id="span_N">N</span>
+                <span id="span_E">E</span>
+                <span id="span_L">L</span>
+            </h2>
+
+            <ul class="sidebar">
+                <i onclick=hidebar()><i class="fa-solid fa-x"></i></i>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </ul>
+            <ul>
+                <a class="hideMobile" href="#home" class="active">Home</a>
+                <a class="hideMobile" href="#about">About</a>
+                <a class="hideMobile" href="#skill">Skill</a>
+                <a class="hideMobile" href="#projects">Projects</a>
+                <a class="hideMobile" href="#contact">Contact</a>
+                <i onclick=sidebarMenu()> <i class="fa-solid fa-bars"></i></i>
+            </ul>
+
+        </nav> 
+    </header>
+    <!-----------------home page--------------->
+
+    <section id="home">
+        <div class="home-page">
+                <h1>Stellar Showcase:
+                    <p> Explore the Night Sky, Discover My Starlit Portfolio.</p>
+                </h1>
+            <button id="btn_knowMe"> Download My Resume </button>
+        </div>
+    </section>
+
+    <!-----------------about page--------------->
+
+    <section id="about">
+        <div class="image"> 
+            <img src="images/aboutPic-removebg-preview.png" id="about_pic">
+        </div>
+           
+            <div class="about-me">
+                <h1>About Me</h1>
+                   <p>Welcome to my corner of the web! I'm Janel Lariba, a passionate third-year student pursuing a Bachelor of
+                     Science in Computer Engineering. With a keen interest in both software and hardware, 
+                     I'm on a mission to explore the intricate fusion of technology and innovation.
+                      Through my journey, I've delved deep into the realms of digital logic design, programming languages, 
+                      and system architecture, seeking to unravel the complexities of modern computing. Whether it's crafting 
+                      elegant software solutions or tinkering with circuitry to bring ideas to life, I'm driven by a relentless 
+                      curiosity and a desire to push the boundaries of what's possible in the ever-evolving world of technology. 
+                      Join me as I share my experiences, insights, and discoveries on this exciting journey of learning and exploration.
+                  </p>
+            </div>
+      
+    </section>
+
+     <!-----------------skill page--------------->
+
+        <section id="skill">  
+
+            <div class="skill-intro"> 
+                <h1>Skills</h1>
+            </div>
+            
+            <div class="row">
+                <div class="card card1">
+                    <div class="card-image card-image1"> </div>
+                    <div class="card-text card-text1">
+                    <span class="date date1">skill</span>  
+                    <h2>Programming Languages</h2>  
+                    <p>Possess a basic understanding in programming languages. I have learned the fundamental concepts and syntax of languages such as C++, HTML, CSS, Arduino IDE and assembly code. </p>
+                    </div>
+                </div>
+
+                <div class="card card2">
+                    <div class="card-image card-image2"> </div>
+                    <div class="card-text card-text2">
+                    <span class="date date2">skill</span>  
+                    <h2>Computer Aided Drafting</h2>  
+                    <p>I have a basic grasp of the software's functionalities. I can create basic technical drawings and models using CAD tools, such as creating 2D sketches and simple 3D models.</p>
+                    </div>
+                </div>
+    
+                <div class="card card3">
+                    <div class="card-image card-image3"> </div>
+                   <div class="card-text card-text3">
+                    <span class="date date3">skill</span>  
+                    <h2>Circuit Design</h2>  
+                    <p>Have a foundational understanding of creating schematic diagrams and layouts for electronic circuits. I can comprehend basic circuit concepts, such as integrated circuits, arduino module, and can design simple circuits to perform specific functions.</p> 
+                   </div> 
+                </div>
+                
+                
+            </div>
+      
+        </section>    
+    
+    <!-----------------projects--------------->
+    <section id="projects">
+        <div class="projects_intro">
+            <h1 style="text-align: center; ">Projects</h1>
+        </div>
+        <div class="container_projectsRows">
+            <div class="project project1">
+                <div class="image-project1"></div>
+                <h1>Automated Paint Production System</h1>
+                <p>In this project we utilized Festo fluidsim in which we created a pneumatic system of paint production.</p>
+            </div>
+
+            <div class="project project2">
+                <div class="image-project2"></div>
+                <h1>Arduino-based Pet Tracking System</h1>
+                <p>This project involves GPS which track the location of the pet, and GSM where this module sends a message when the pet is outside of the specified boundary.</p>
+            </div>
+
+            <div class="project project3">
+                <div class="image-project3"></div>
+                <h1>Health Information Management System</h1>
+                <p>This system is created for Colegio De Muntinlupa's Clinic. It's function is to keep track the students who visited the clinic, indicate the prescription of the nurse and to manage the student's health history. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----------------contact--------------->
+    <section id="contact">
+        <div class="container_contact">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="bf767a92-05ec-4172-af6b-268a4ce5ba8c">
+
+                <input type="text" name="name" 
+                id="contact_firstname" 
+                placeholder="Full Name " 
+                size="50" 
+                required/> <br>
+
+        
+         <input type="email" 
+                name="email" 
+                id="contact_email" 
+                placeholder="Email" 
+                size="50" 
+                required/> <br>
+         <textarea name="message" 
+                  cols="53" 
+                  rows="8" 
+                  placeholder="Message" 
+                  id="contact_message"></textarea> <br>
+        <button>Submit</button>
+            </form>
+
+            <div class="second_contact">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> janellaa.lariba07@gmail.com</p>
+               <p> <i class="fa-solid fa-phone"> </i> 09276922019</p> 
+                <p><i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i> @Janel Lariba</p>
+            </div>
+         </div>
+
+         <div class="footer">
+            <p class="footer_text" style="text-align: center;">
+                    Copyright &#169; Janel Lariba
+            </p>
+        </div>
+       
+    </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
